@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" fill="none">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a2a4a"/>
+      <stop offset="100%" stop-color="#0d1b35"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d57a"/>
+      <stop offset="40%" stop-color="#e8b84b"/>
+      <stop offset="70%" stop-color="#c8921e"/>
+      <stop offset="100%" stop-color="#e8b84b"/>
+    </linearGradient>
+    <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5d57a"/>
+      <stop offset="50%" stop-color="#e0a832"/>
+      <stop offset="100%" stop-color="#b8821a"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Circular background -->
+  <circle cx="160" cy="155" r="128" fill="url(#bgGrad)"/>
+
+  <!-- Outer decorative ring -->
+  <circle cx="160" cy="155" r="128" fill="none" stroke="url(#goldGrad)" stroke-width="2.2" opacity="0.9"/>
+  <circle cx="160" cy="155" r="122" fill="none" stroke="url(#goldGrad)" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Ornamental top arch dots -->
+  <g fill="url(#goldGrad)" opacity="0.85">
+    <circle cx="160" cy="28" r="3"/>
+    <circle cx="173" cy="29.5" r="2.2"/>
+    <circle cx="147" cy="29.5" r="2.2"/>
+    <circle cx="186" cy="34" r="1.8"/>
+    <circle cx="134" cy="34" r="1.8"/>
+  </g>
+
+  <!-- Ornamental bottom arch dots -->
+  <g fill="url(#goldGrad)" opacity="0.85">
+    <circle cx="160" cy="282" r="3"/>
+    <circle cx="173" cy="280.5" r="2.2"/>
+    <circle cx="147" cy="280.5" r="2.2"/>
+    <circle cx="186" cy="276" r="1.8"/>
+    <circle cx="134" cy="276" r="1.8"/>
+  </g>
+
+  <!-- Left ornament: lotus petal fan -->
+  <g transform="translate(36,155)" fill="url(#goldGrad)" opacity="0.75">
+    <ellipse cx="0" cy="0" rx="14" ry="5" transform="rotate(-15)"/>
+    <ellipse cx="0" cy="0" rx="14" ry="5" transform="rotate(0)"/>
+    <ellipse cx="0" cy="0" rx="14" ry="5" transform="rotate(15)"/>
+    <circle cx="0" cy="0" r="4"/>
+  </g>
+
+  <!-- Right ornament: lotus petal fan -->
+  <g transform="translate(284,155)" fill="url(#goldGrad)" opacity="0.75">
+    <ellipse cx="0" cy="0" rx="14" ry="5" transform="rotate(-15)"/>
+    <ellipse cx="0" cy="0" rx="14" ry="5" transform="rotate(0)"/>
+    <ellipse cx="0" cy="0" rx="14" ry="5" transform="rotate(15)"/>
+    <circle cx="0" cy="0" r="4"/>
+  </g>
+
+  <!-- ======= TRISHUL (center top) ======= -->
+  <g filter="url(#glow)" transform="translate(160, 58)">
+    <!-- Main shaft -->
+    <rect x="-1.8" y="-8" width="3.6" height="46" fill="url(#goldGrad2)" rx="1"/>
+    <!-- Center prong -->
+    <path d="M0,-30 L-3.5,-14 L0,-10 L3.5,-14 Z" fill="url(#goldGrad2)"/>
+    <!-- Left prong -->
+    <path d="M-14,-22 Q-10,-18 -8,-14 L-5,-14 Q-5,-20 -14,-22 Z" fill="url(#goldGrad2)"/>
+    <!-- Right prong -->
+    <path d="M14,-22 Q10,-18 8,-14 L5,-14 Q5,-20 14,-22 Z" fill="url(#goldGrad2)"/>
+    <!-- Cross bar -->
+    <rect x="-14" y="-16" width="28" height="3" rx="1.5" fill="url(#goldGrad2)"/>
+    <!-- Base knob -->
+    <ellipse cx="0" cy="38" rx="5" ry="3" fill="url(#goldGrad2)"/>
+    <!-- Flag on top -->
+    <path d="M0,-34 L12,-29 L0,-24 Z" fill="url(#goldGrad)" opacity="0.9"/>
+  </g>
+
+  <!-- ======= TEMPLE SHIKHARA ======= -->
+  <g filter="url(#glow)">
+    <!-- Temple spire layers -->
+    <path d="M160,82 L153,92 L167,92 Z" fill="url(#goldGrad2)"/>
+    <path d="M160,88 L148,100 L172,100 Z" fill="url(#goldGrad2)"/>
+    <path d="M160,96 L143,110 L177,110 Z" fill="url(#goldGrad2)"/>
+    <!-- Temple body -->
+    <path d="M143,110 L143,132 L177,132 L177,110 Z" fill="url(#goldGrad2)" opacity="0.9"/>
+    <!-- Temple door arch -->
+    <path d="M154,132 L154,120 Q160,114 166,120 L166,132 Z" fill="#0d1b35"/>
+    <!-- Horizontal lines on body -->
+    <line x1="143" y1="115" x2="177" y2="115" stroke="#0d1b35" stroke-width="1.2" opacity="0.6"/>
+    <line x1="143" y1="121" x2="177" y2="121" stroke="#0d1b35" stroke-width="1.2" opacity="0.6"/>
+    <line x1="143" y1="127" x2="177" y2="127" stroke="#0d1b35" stroke-width="1.2" opacity="0.6"/>
+  </g>
+
+  <!-- ======= MOUNTAINS ======= -->
+  <g filter="url(#glow)">
+    <!-- Far left mountain -->
+    <path d="M52,195 L88,132 L124,195 Z" fill="url(#goldGrad2)" opacity="0.65"/>
+    <!-- Far right mountain -->
+    <path d="M196,195 L232,132 L268,195 Z" fill="url(#goldGrad2)" opacity="0.65"/>
+    <!-- Center left mountain -->
+    <path d="M80,195 L120,138 L160,195 Z" fill="url(#goldGrad2)" opacity="0.85"/>
+    <!-- Center right mountain -->
+    <path d="M160,195 L200,138 L240,195 Z" fill="url(#goldGrad2)" opacity="0.85"/>
+    <!-- Snow caps -->
+    <path d="M120,138 L112,155 L128,155 Z" fill="#f5d57a" opacity="0.7"/>
+    <path d="M200,138 L192,155 L208,155 Z" fill="#f5d57a" opacity="0.7"/>
+    <!-- Mountain base line -->
+    <line x1="52" y1="195" x2="268" y2="195" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.6"/>
+  </g>
+
+  <!-- ======= WINDING ROAD ======= -->
+  <g opacity="0.8">
+    <path d="M160,195 Q155,208 148,215 Q140,222 138,232" stroke="url(#goldGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M160,195 Q165,208 172,215 Q180,222 182,232" stroke="url(#goldGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Road fill -->
+    <path d="M160,195 Q155,208 148,215 Q140,222 138,232 L182,232 Q180,222 172,215 Q165,208 160,195 Z" fill="url(#goldGrad)" opacity="0.2"/>
+  </g>
+
+  <!-- ======= DECORATIVE SIDE STARS ======= -->
+  <g fill="url(#goldGrad)" opacity="0.7">
+    <!-- Left star -->
+    <path d="M78,148 L80,142 L82,148 L88,148 L83,152 L85,158 L80,154 L75,158 L77,152 L72,148 Z"/>
+    <!-- Right star -->
+    <path d="M238,148 L240,142 L242,148 L248,148 L243,152 L245,158 L240,154 L235,158 L237,152 L232,148 Z"/>
+  </g>
+
+  <!-- ======= BOTTOM BANNER ======= -->
+  <!-- Decorative horizontal lines flanking the text -->
+  <line x1="50" y1="237" x2="115" y2="237" stroke="url(#goldGrad)" stroke-width="1.2" opacity="0.7"/>
+  <line x1="205" y1="237" x2="270" y2="237" stroke="url(#goldGrad)" stroke-width="1.2" opacity="0.7"/>
+  <circle cx="115" cy="237" r="2.5" fill="url(#goldGrad)" opacity="0.8"/>
+  <circle cx="205" cy="237" r="2.5" fill="url(#goldGrad)" opacity="0.8"/>
+
+  <!-- "BAIDYANATH" text -->
+  <text x="160" y="254" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" letter-spacing="3" fill="url(#goldGrad)" filter="url(#glow)">BAIDYANATH</text>
+
+  <!-- Thin divider -->
+  <line x1="90" y1="260" x2="230" y2="260" stroke="url(#goldGrad)" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- "TRAVELS" text -->
+  <text x="160" y="276" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="400" letter-spacing="6" fill="url(#goldGrad)" opacity="0.9">TRAVELS</text>
+
+  <!-- Bottom outer arc label line -->
+  <path d="M 72,282 A 100,100 0 0 0 248,282" fill="none" stroke="url(#goldGrad)" stroke-width="1" opacity="0.4"/>
+</svg>
